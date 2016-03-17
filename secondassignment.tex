@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\begin{document}
+
+\begin{center}
+\textbf{Methods: Game Theory 1 }
+\vspace{3 mm}
+
+\textbf{Fall 2015}
+\vspace{7mm}
+
+\textbf{Problem Set 3: Dynamic Games, Repeated Games}
+\end{center}
+
+\textbf{Problem 1}: Consider the game in Figure 1 in extensive form in which first player 1, then player 2, and then again player 1 moves. In the payoff vector, the upper (lower) entry in the payoff of player 1 (2). The payoff $x$ for player 1 after his move \textit{R} is some real number.
+\begin{figure}[h]
+\includegraphics[scale=1]{graph}
+\end{figure} For each of the two possible values
+$x=1$ and $x=5$ find all (both pure and mixed) subgame perfect Nash equilibria of the game. Make sure you describe the equilibria fully.
+
+\vspace{4mm}
+\textbf{Solution}: The subgame of the game (starting with player 2's move) has the following strategic form:
+
+\begin{center}
+Player 2
+\vspace{5mm}
+
+\begin{tabular}{ r|c|c| }
+\multicolumn{1}{r}{}
+ & \multicolumn{1}{c}{$A$}
+  & \multicolumn{1}{c}{$B$} \\
+\cline{2-3}
+$S$ & 6,1 & 0,0 \\
+\cline{2-3}
+$T$ & 0,0 & 4,4 \\
+\cline{2-3}
+
+\end{tabular}
+\end{center}
+\vspace{2mm}
+This game two pure equilibria and one mixed equilibrium.
+
+\vspace{5mm}
+
+\textbf{Problem 2:} Consider the following situation: Two upstream suppliers $U_1$ and $U_2$ of widgets compete for sales to downstream manufacturers $D_1$ and $D_2$ who in turn sell to final consumers. Widgets are identical and constitute a homogenous good. The upstream firms $U_1$ and $U_2$ have respectively unit costs of $c_1=0$ and $0<c_2<0.5$. Downstream firms $D_1$ and $D_2$ use a one-to-one production technology to turn one widget into one gadget. Gadgets are identical and constitute a homogenous good. The downstream firms have no other costs than the costs for the input (widgets). The downstream firms face final consumer demand for gadgets with inverse demand given by $p=1-q_1-q_2$, where $q_i$ is the individual gadget output by downstream firm $D_i, i=1,2$. There are no capacity constrainst.
+
+\vspace{5mm}
+
+\textbf{(a)} Consider the following two-stage game. In the first stage, the two upstream firms $Q_1$ and $U_2$ in prices (Betrand competition), independently and simultaneously choosing prices $w_1$ and $w_2$ for their widgets. After observing $w_1$ and $w_2$, the two downstream firms $D_1$ and $D_2$ buy widgets and then indepedently and simultaneously choose quantities $q_1$ and $q_2$ of gadgets to be sold in the final consumer markets. (That is, the two downstream firms compete à la Cournot). Determine the subgame perfect Nash equilibrium of this game! [\textbf{Hint}: Assume that if both upstream firms choose the same price, every downstream firm will buy from upstream firm $U_1$]. Determine also the final consumer price and the profits of all firms in the market!
+
+\vspace{4mm}
+
+\textbf{Solution:} Each of the downstream firms will receive the input from firm $U_1$ at price $c_2$ (or slightly below). Since the upstream firms are playing a Bertrand game with asymmetric costs. That is, $U_1$ will choose a price of $c_2$ (or slightly below) and $U_2$ would choose a price of $c_2$. The downstreat firms play a standard Cournot game with costst $c_2$. That is, their profit function would read $\pi D_i=(1-c_2-q_1-q_2)q_i$ and the equilibrium quantities for the downstream firms in the Nash equilibrium in the subgame are given by $$q_1^{vs}=q_2^{vs}=(1-c_2)/3,$$ where the label "\textit{vs}" stands for 
+vertically seperated". The final consumer price is $p^{vs}=(1+2c_2)/3$. 
+Firm $U_1$'s profits are given by $${\pi_U}_1=2c_2(1-c_2)/3,$$ whereas each downstream firm earns $${\pi_D}_i=(1-c_2)^2/9.$$
+\end{document}
